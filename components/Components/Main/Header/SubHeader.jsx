@@ -1,12 +1,13 @@
+import Nav from "../../Navbar/Nav";
 
-import Logo from "./Logo";
+
 
 
 
 const SubHeader = () => {
   return (
     <div>
-        <Logo/>
+        <Nav/>
     </div>
   );
 };
