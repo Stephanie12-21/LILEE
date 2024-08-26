@@ -9,7 +9,7 @@ import TipsSection from "@/components/Components/Main/Sections/TipSection";
 export default function Home() {
   return (
     <main>
-      <div className='bg-red-700'>
+      <div className='bg-red-300'>
         <HomeSection/>
       </div>
 

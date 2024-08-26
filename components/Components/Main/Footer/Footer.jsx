@@ -7,10 +7,10 @@ const Footer = () => {
     <div className='bg-slate-500 flex flex-col items-center'>
 
       <div className='flex justify-between w-full'>
-        <div className='mx-auto px-auto mt-5 bg-red-700'>
+        <div className='mx-auto px-auto mt-5 '>
           <SideFooter />
         </div>
-        <div className='mx-auto px-auto mt-5 bg-green-800'>
+        <div className='mx-auto px-auto mt-5'>
           <MenuFooter />
         </div>
       </div>
