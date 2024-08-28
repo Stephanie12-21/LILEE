@@ -1,5 +1,6 @@
 import FaqSections from "@/components/Components/Main/Sections/FaqSections";
-import HomeSection from "@/components/Components/Main/Sections/HomeSection";
+import HomeSection from "@/components/Components/Main/Sections/HomePage/HomeSection";
+
 import LogementSection from "@/components/Components/Main/Sections/LogementSection";
 import SponsorSection from "@/components/Components/Main/Sections/SponsorSection";
 import TestimonialSection from "@/components/Components/Main/Sections/TestimonialSection";
