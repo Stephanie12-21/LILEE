@@ -1,16 +1,17 @@
-import FaqSections from "@/components/Components/Main/Sections/FaqSections";
+import FaqSections from "@/components/Components/Main/Sections/FAQ/FaqSections";
 import HomeSection from "@/components/Components/Main/Sections/HomePage/HomeSection";
 
-import LogementSection from "@/components/Components/Main/Sections/LogementSection";
+import LogementSection from "@/components/Components/Main/Sections/Logements/LogementSection";
 import SponsorSection from "@/components/Components/Main/Sections/SponsorSection";
-import TestimonialSection from "@/components/Components/Main/Sections/TestimonialSection";
+import { TestimonialSection } from "@/components/Components/Main/Sections/Testimonials/TestimonialSection";
+
 import TipsSection from "@/components/Components/Main/Sections/TipSection";
 
 
 export default function Home() {
   return (
     <main>
-      <div className='bg-red-300'>
+      <div className='bg-image1 bg-cover bg-no-repeat'>
         <HomeSection/>
       </div>
 
@@ -18,11 +19,11 @@ export default function Home() {
         <LogementSection/>
       </div>
 
-      <div className='bg-blue-600'>
+      <div className='bg-[#FCA311]'>
         <TipsSection/>
       </div>
 
-      <div className='bg-gray-700'>
+      <div className='bg-[#FAFAFA]'>
         <FaqSections/>
       </div>
 

@@ -28,7 +28,7 @@ export function SectionDate({ className }) {
             id="date"
             variant={"outline"}
             className={cn(
-              "w-[250px] h-12 justify-start text-left font-normal",
+              "w-[400px] h-12 justify-start text-left font-normal",
               !date && "text-muted-foreground"
             )}
           >
@@ -43,7 +43,7 @@ export function SectionDate({ className }) {
                 format(date.from, "LLL dd, y")
               )
             ) : (
-              <span>Pick a date</span>
+              <span>Quand?</span>
             )}
           </Button>
         </PopoverTrigger>

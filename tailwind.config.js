@@ -14,10 +14,8 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
-      },
-      fontFamily: {
-        primary:"var(--font-poppins)",
-      },
+      }
+      
     },
     extend: {
       colors: {
@@ -78,6 +76,12 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
+      },
+      backgroundImage :{
+        image1:"url('/assets/image.jpg')",
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

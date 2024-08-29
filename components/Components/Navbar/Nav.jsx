@@ -6,7 +6,7 @@ import ListLinks from './ListLinks';
 const Nav = () => {
   return (
    
-    <div className='container mx-auto pt-4'>
+    <div className='container mx-auto pt-8'>
       <div className='flex justify-between items-center '>
         <Logo/>
         <ListLinks/>
