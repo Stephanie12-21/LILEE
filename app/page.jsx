@@ -11,6 +11,7 @@ import TipsSection from "@/components/Components/Main/Sections/TipSection";
 export default function Home() {
   return (
     <main>
+      
       <div className='bg-image1 bg-cover bg-no-repeat'>
         <HomeSection/>
       </div>

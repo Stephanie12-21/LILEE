@@ -26,7 +26,7 @@ export function CardSection() {
           <div className="bg-red-500">
             Prix
           </div>
-          <div className="">
+          
             <div className="flex items-center">
               <div className="flex space-x-1">
                 {[...Array(5)].map((_, index) => (
@@ -48,8 +48,7 @@ export function CardSection() {
                 ))}
               </div>
             </div>
-          </div>
-
+          
         </div>
       </CardFooter>
     </Card>
