@@ -9,7 +9,7 @@ const TextSection = () => {
       <h1 className="text-[48px] font-semibold">Comment ça marche?</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae amet iure quidem minima quas nostrum illum in eaque provident. Excepturi?</p>
       <div>
-        <Button className="h-[45px] w-[137px] text-[18px]  rounded-[10px] flex items-center">
+        <Button className="h-[45px] w-[137px] font-semibold text-[18px] rounded-[10px] flex items-center">
           Cliquer ici
           <FaArrowRight className="ml-2"/>
         </Button>

@@ -52,6 +52,8 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+       
+
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -83,6 +85,7 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      
     },
   },
   plugins: [require("tailwindcss-animate")],

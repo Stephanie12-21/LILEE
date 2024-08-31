@@ -51,7 +51,7 @@ const TipsSection = () => {
     <div className='container mx-auto flex items-center justify-between my-5 h-[300px]'>
       <div className='flex items-center justify-between w-full mx-auto space-x-4'>
         {/* Card 1 */}
-        <Card className='w-full max-w-xs flex justify-between items-center flex-col h-[250px]'>
+        <Card className='w-full max-w-xs flex justify-between items-center flex-col h-[250px] bg-[#fccd83] hover:bg-[#FCA311] rounded-[36px]'>
           <CardHeader>
             <Image src="/assets/Figure.svg" alt="Description de l'image" width={72} height={60}  className='mt-8'/>
           </CardHeader>
@@ -62,7 +62,7 @@ const TipsSection = () => {
         </Card>
 
         {/* Card 2 */}
-        <Card className='w-full max-w-xs flex justify-between items-center flex-col h-[250px]'>
+        <Card className='w-full max-w-xs flex justify-between items-center flex-col h-[250px] bg-[#fccd83] hover:bg-[#FCA311] rounded-[36px]'>
           <CardHeader>
             <Image src="/assets/Figure(3).svg" alt="Description de l'image" width={72} height={60}  className='mt-8' />
           </CardHeader>
@@ -74,7 +74,7 @@ const TipsSection = () => {
 
 
         {/* Card 3 */}
-        <Card className='w-full max-w-xs flex justify-between items-center flex-col h-[250px]'>
+        <Card className='w-full max-w-xs flex justify-between items-center flex-col h-[250px] bg-[#fccd83] hover:bg-[#FCA311] rounded-[36px]'>
           <CardHeader>
             <Image src="/assets/Figure(1).svg" alt="Description de l'image" width={72} height={60}  className='mt-8' />
           </CardHeader>
@@ -85,7 +85,7 @@ const TipsSection = () => {
         </Card>
 
         {/* Card 4 */}
-        <Card className='w-full max-w-xs flex justify-between items-center flex-col h-[250px]'>
+        <Card className='w-full max-w-xs flex justify-between items-center flex-col h-[250px] bg-[#fccd83] hover:bg-[#FCA311] rounded-[36px]'>
           <CardHeader>
             <Image src="/assets/Figure(2).svg" alt="Description de l'image" width={72} height={60} className='mt-8' />
           </CardHeader>

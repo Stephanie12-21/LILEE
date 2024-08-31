@@ -2,7 +2,8 @@ import FaqSections from "@/components/Components/Main/Sections/FAQ/FaqSections";
 import HomeSection from "@/components/Components/Main/Sections/HomePage/HomeSection";
 
 import LogementSection from "@/components/Components/Main/Sections/Logements/LogementSection";
-import SponsorSection from "@/components/Components/Main/Sections/SponsorSection";
+import SponsorSection from "@/components/Components/Main/Sections/Sponsors/SponsorSection";
+
 import { TestimonialSection } from "@/components/Components/Main/Sections/Testimonials/TestimonialSection";
 
 import TipsSection from "@/components/Components/Main/Sections/TipSection";
@@ -10,29 +11,29 @@ import TipsSection from "@/components/Components/Main/Sections/TipSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#fff1da]">
       
-      <div className='bg-image1 bg-cover bg-no-repeat'>
+      <div >
         <HomeSection/>
       </div>
 
-      <div className='bg-purple-600'>
+      <div >
         <LogementSection/>
       </div>
 
-      <div className='bg-[#FCA311]'>
+      <div>
         <TipsSection/>
       </div>
 
-      <div className='bg-[#FAFAFA]'>
+      <div >
         <FaqSections/>
       </div>
 
-       <div className='bg-orange-500'>
+       <div >
         <TestimonialSection/>
        </div>
 
-       <div className='bg-green-600'>
+       <div>
         <SponsorSection/>
        </div>
       
