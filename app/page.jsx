@@ -11,37 +11,13 @@ import TipsSection from "@/components/Components/Main/Sections/TipSection";
 
 export default function Home() {
   return (
-    <main className="bg-[#fff1da]">
-      
-      <div >
+    <main className="bg-[#fff1da] pt-8">
         <HomeSection/>
-      </div>
-
-      <div >
         <LogementSection/>
-      </div>
-
-      <div>
         <TipsSection/>
-      </div>
-
-      <div >
         <FaqSections/>
-      </div>
-
-       <div >
         <TestimonialSection/>
-       </div>
-
-       <div>
         <SponsorSection/>
-       </div>
-      
-      
-      
-     
-      
-     
     </main>
   );
 }

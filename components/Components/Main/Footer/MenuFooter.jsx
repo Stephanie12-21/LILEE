@@ -4,7 +4,7 @@ import Divers from './Divers';
 
 const MenuFooter = () => {
   return (
-    <div className='flex items-start gap-x-44 mt-8'>
+    <div className='flex items-start gap-x-36 mt-8'>
       <Rubriques/>
       <Divers/>
     </div>

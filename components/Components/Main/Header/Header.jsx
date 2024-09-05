@@ -24,11 +24,11 @@ import { Separator } from '@/components/ui/separator';
 const Header = () => {
   return (
     <div className='bg-[#15213D] '>
-      <div className='h-[56px]'> {/* Fixed height for FirstHeader */}
+      <div className='h-[56px]'> 
         <FirstHeader />
       </div>
       <Separator />
-      <div className='h-[88px] '> {/* Fixed height for SubHeader */}
+      <div className='h-[88px] '> 
         <SubHeader />
       </div>
 

@@ -4,10 +4,10 @@ import SideFooter from './SideFooter';
 
 const Footer = () => {
   return (
-    <div className='bg-[#15213D] flex flex-col items-center h-[480px]'>
+    <div className='bg-[#15213D] flex flex-col   items-center h-[480px]'>
 
-      <div className='flex justify-between w-full'>
-        <div className='mx-40 px-auto mt-5 '>
+      <div className='flex justify-between container mx-auto gap-52 w-full'>
+        <div className=' px-auto mt-5 '>
           <SideFooter />
         </div>
         <div className='mx-auto  mt-5'>

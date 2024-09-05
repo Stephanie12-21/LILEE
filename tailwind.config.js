@@ -81,10 +81,17 @@ module.exports = {
       },
       backgroundImage :{
         image1:"url('/assets/image.jpg')",
+        image2:"url('/slides_photo/photo(1).jpg')",
+        image3:"url('/slides_photo/photo(2).jpg')",
+        image4:"url('/slides_photo/photo(3).jpg')",
+        image5:"url('/slides_photo/photo(4).jpg')",
+        image6:"url('/slides_photo/photo(5).jpg')",
+        image7:"url('/slides_photo/photo(6).jpg')",
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      
       
     },
   },
