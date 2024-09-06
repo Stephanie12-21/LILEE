@@ -28,7 +28,7 @@ export function SectionDate({ className }) {
             id="date"
             variant={"outline"}
             className={cn(
-              "w-[300px] h-12 justify-start text-left font-normal",
+              "w-full h-12 justify-start text-center font-normal border-[2px] border-color",
               !date && "text-muted-foreground"
             )}
           >

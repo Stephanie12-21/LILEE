@@ -8,6 +8,9 @@ import {
 } from "@/components/ui/card";
 import { useState } from "react";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { Button } from "@/components/ui/button";
+
+import Link from "next/link";
 
 export function CardSection() {
   const [isLiked, setIsLiked] = useState(false);
@@ -17,7 +20,7 @@ export function CardSection() {
   };
 
   return (
-    <Card className="w-[400px] h-[480px] rounded-[16px] shadow sm:shadow-md md:shadow-lg lg:shadow-xl xl:shadow-2xl">
+    <Card className="w-[400px] h-[500px] rounded-[16px] shadow sm:shadow-md md:shadow-lg lg:shadow-xl xl:shadow-2xl">
       <CardContent className="w-[390px] h-[300px] flex items-center mx-auto mt-1 rounded-[24px] border-[1px] border-[#e39a2d] bg-image1 bg-cover bg-no-repeat">
         <div
           className="relative mx-auto p-2 left-40 top-[-110px] rounded-[20px] hover:bg-[#FFEBEC] cursor-pointer"
@@ -32,15 +35,21 @@ export function CardSection() {
       </CardContent>
 
       <CardFooter className="flex-col items-start p-2 gap-y-4 mt-2">
-        <Label htmlFor="categorie" className="bg-slate-300 p-2 rounded-[4px]">
-          Catégorie
-        </Label>
+        <div className="flex items-center space-x-52">
+          <Label htmlFor="categorie" className="bg-slate-300 p-2 rounded-[4px]">
+            Catégorie
+          </Label>
+          <Link href="/PAGES/Information">         
+             <Button className=" text-[#15213D] text-[16px] font-semibold bg-transparent hover:underline hover:bg-transparent px-4 py-2 rounded-[10px]">Découvrir</Button>
+          </Link>
+        </div>
+
         <Label htmlFor="type" className="text-xl">
           Type 
         </Label>
         <Label htmlFor="localisation">Localisation </Label>
 
-        <div className="flex gap-x-56">
+        <div className="flex gap-x-52">
           <div className="flex">
             <p className="text-[#FCA311] font-normal text-[18px]">Prix</p>
           </div>

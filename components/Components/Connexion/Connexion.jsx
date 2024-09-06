@@ -9,10 +9,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import Link from "next/link";
+import { CheckingOTP } from "./CheckingOTP";
 
 export function Connexion() {
   const [isPasswordVisible, setPasswordVisible] = useState(false); // État pour gérer la visibilité du mot de passe
   const [isRegister, setIsRegister] = useState(false); // État pour gérer quel formulaire afficher
+  const [showOTPDialog, setShowOTPDialog] = useState(false);
 
   // Fonction pour basculer la visibilité du mot de passe
   const togglePasswordVisibility = () => {
@@ -22,6 +24,13 @@ export function Connexion() {
   // Fonction pour basculer entre connexion et inscription
   const toggleForm = () => {
     setIsRegister(!isRegister);
+  };
+
+   // Fonction qui affiche le champ OTP après 5 secondes
+    const handleRegisterClick = () => {
+    setTimeout(() => {
+      setShowOTPDialog(true);
+    }, 2000);
   };
 
   return (
@@ -160,9 +169,11 @@ export function Connexion() {
                 </div>
               </div>
 
-              <Button type="submit" className="px-44 py-4 rounded-[10px] text-[16px] font-bold text-[#FCFCFD]">
-                S' incrire
+              <Button type="submit" onClick={handleRegisterClick} className="px-44 py-4 rounded-[10px] text-[16px] font-bold text-[#FCFCFD]">
+                S'inscrire
               </Button>
+
+              
               <div className="flex flex-col items-center px-24 space-y-3 justify-center">
                 <p>ou faites-le via d'autres comptes</p>
                 <div className="flex items-center justify-between space-x-4">
@@ -182,6 +193,14 @@ export function Connexion() {
           )}
         </div>
       </DialogContent>
+      {/* Dialog pour CheckingOTP */}
+      <Dialog open={showOTPDialog} onOpenChange={setShowOTPDialog}>
+        <DialogContent className="w-[400px] h-[200px] justify-center items-center space-y-3">
+          <h2 className="text-[17px] font-semibold text-center pt-5">Un code a été envoyé à votre email. <br /> Veuillez le saisir ici. </h2>
+          <CheckingOTP /> {/* Affichage du composant CheckingOTP */}
+        </DialogContent>
+      </Dialog>
     </Dialog>
+    
   );
 }
