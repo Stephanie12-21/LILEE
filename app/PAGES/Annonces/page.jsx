@@ -12,8 +12,9 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs";
 import { SettingSection } from "@/components/Components/Main/Sections/HomePage/SettingSection";
-import { FaSearch } from "react-icons/fa";
+import { FaArrowRight, FaSearch } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Annonces() {
   const cardVariants = {
@@ -326,6 +327,14 @@ export function Annonces() {
         </div>
       </TabsContent>
       </Tabs>
+      <div className='container mx-auto flex items-center w-full pt-10 place-content-center'>
+          <Link href="/PAGES/Annonces">
+            <Button className='py-4 px-5 text-[17px] rounded-[10px]'>
+              Voir plus
+              <FaArrowRight className="ml-2" />
+            </Button>
+          </Link>
+        </div>
     </div>
   );
 }
