@@ -22,14 +22,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 const Informations = () => {

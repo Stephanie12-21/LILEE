@@ -10,6 +10,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import Link from 'next/link';
 
 const LogementSection = () => {
   const controls = useAnimation();
@@ -94,10 +95,13 @@ const LogementSection = () => {
           animate={controls}
           variants={buttonVariants}
         >
-          <Button className='h-[45px] w-[137px] text-[18px] rounded-[10px]'> 
-            Voir plus 
-            <FaArrowRight className="ml-2"/>
-          </Button>
+          <Link href="/PAGES/Annonces">
+            <Button className='h-[45px] w-[137px] text-[18px] rounded-[10px]'> 
+              Voir plus 
+              <FaArrowRight className="ml-2"/>
+            </Button>
+          </Link>
+          
         </motion.div>
       </div>
 

@@ -36,6 +36,7 @@ export function Connexion() {
   return (
     <Dialog className="border-none">
       <DialogTrigger asChild>
+        
         <Button className="px-5 rounded-[10px] text-[16px] font-semibold bg-transparent border-[1px] hover:border-none">
           {isRegister ? "Se connecter" : "Se connecter"}
         </Button>
@@ -80,10 +81,12 @@ export function Connexion() {
               <div className="flex pl-72 underline text-[14px] text-[#777E90]">
                 <Link href="/">Mot de passe oublié?</Link>
               </div>
-
-              <Button type="submit" className="px-40 py-4 rounded-[10px] text-[16px] font-bold text-[#FCFCFD]">
-                Se connecter
-              </Button>
+              <Link href="/USER">
+                <Button type="submit" className="px-40 py-4 rounded-[10px] text-[16px] font-bold text-[#FCFCFD]">
+                  Se connecter
+                </Button>
+              </Link>
+              
 
               <div className="flex flex-col items-center px-24 space-y-3 justify-center">
                 <p>ou faites-le via d'autres comptes</p>
