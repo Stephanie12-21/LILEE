@@ -1,11 +1,16 @@
 
 import React from 'react';
-import { HiOutlineSpeakerphone, HiOutlineCalendar, HiOutlineCreditCard, HiOutlineHeart, HiOutlineUser, HiOutlineMail } from 'react-icons/hi';  // Importation des icônes outline
+import { HiOutlineSpeakerphone, HiOutlineCalendar, HiOutlineCreditCard, HiOutlineHeart, HiOutlineUser, HiOutlineMail, HiOutlineHome } from 'react-icons/hi';  // Importation des icônes outline
 
 const SideBar = ({ setSelectedPage }) => {
   return (
     
-      <div className="container ml-10 flex flex-col items-start py-10 space-y-4">
+      <div className=" ml-10 flex flex-col items-start py-0 space-y-4">
+        <button onClick={() => setSelectedPage('Dashboard')} className="flex items-center space-x-3">
+          <HiOutlineHome size={24} /> 
+          <span>Tableau de bord</span>
+        </button>
+
         <button onClick={() => setSelectedPage('Annonces')} className="flex items-center space-x-3">
           <HiOutlineSpeakerphone size={24} /> 
           <span>Annonces</span>

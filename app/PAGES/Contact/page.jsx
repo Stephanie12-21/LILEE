@@ -109,7 +109,7 @@ const Contact = () => {
           </div>
         </CardContent>
         
-        <CardFooter className="flex py-2 items-center mx-40">
+        <CardFooter className="flex py-3 items-center mx-60">
           <AnimatedSubscribeButton
             buttonColor="#15213D"
             buttonTextColor="#ffffff"

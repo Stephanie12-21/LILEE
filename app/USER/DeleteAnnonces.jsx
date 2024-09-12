@@ -8,14 +8,15 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { Trash2 } from "lucide-react"
 
 
-export function AddAnnonces() {
+export function DeleteAnnonces() {
   return (
     <Dialog className="flex justify-between items-center">
       <DialogTrigger asChild>
-      <Button className='px-5 py-4 text-[16px] rounded-[10px] bg-[#263056] flex items-center'>
-            Ajouter une annonce
+        <Button className='px-5 py-4 text-[16px] rounded-[10px] bg-[#FC1111] hover:bg-[#FC1111] flex items-center'>
+        <Trash2 />
         </Button>
       </DialogTrigger>
       <DialogContent className="xl:w-[800px] xl:h-[600px] flex flex-col justify-between ">

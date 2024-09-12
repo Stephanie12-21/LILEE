@@ -11,6 +11,7 @@ import Reservations from './Reservations';
 import Paiements from './Paiements';
 import Favoris from './Favoris';
 import Message from './Message';
+import Dashboard from './Dashboard';
 
 const User = () => {
   const [selectedPage, setSelectedPage] = useState('Annonces');
@@ -18,6 +19,8 @@ const User = () => {
  
   const renderContent = () => {
     switch (selectedPage) {
+      case 'Dashboard':
+        return <Dashboard />;
       case 'Annonces':
         return <Annonces />;
       case 'Réservations':
