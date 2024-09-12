@@ -14,7 +14,7 @@ import Message from './Message';
 import Dashboard from './Dashboard';
 
 const User = () => {
-  const [selectedPage, setSelectedPage] = useState('Annonces');
+  const [selectedPage, setSelectedPage] = useState('Dashboard');
 
  
   const renderContent = () => {
@@ -34,13 +34,17 @@ const User = () => {
       case 'Compte':
         return <Compte/>;
       default:
-        return <Annonces />;
+        return <Dashboard />;
     }
   };
 
   return (
     <div className=' flex space-x-10 '>
       <div className="w-[20%] bg-red-500">
+        <div className='container mx-6 py-10'>
+          <p>Espace proprétaire</p>
+          <p>Membre depuis 20/10/2024</p>
+        </div>
         <SideBar setSelectedPage={setSelectedPage} />
       </div>
       <div className="w-[70%]">

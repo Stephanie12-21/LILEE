@@ -22,7 +22,7 @@ export function EditAnnonces() {
       <DialogContent className="xl:w-[800px] xl:h-[600px] flex flex-col justify-between ">
         <div>
           <DialogHeader>
-            <DialogTitle className="text-3xl text-center pt-5">Paramètres avancés</DialogTitle>
+            <DialogTitle className="text-3xl text-center pt-5">Modifier l'annonce</DialogTitle>
           </DialogHeader>
           <div className="flex flex-col justify-between ml-10 items-start space-y-4 pt-10">
             <p>Catégories</p>
