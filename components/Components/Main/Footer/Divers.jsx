@@ -7,7 +7,7 @@ const Divers = () => {
         <h1 className='text-bold text-[30px] text-white'>Divers</h1>
         <p className='text-semibold text-[16px] text-white'>Foire à questions</p>
         <Link href="/PAGES/Blog" className='text-semibold text-[16px] text-white hover:underline'>Blog & presse</Link >
-        <p className='text-semibold text-[16px] text-white'>Nous contacter</p>
+        <Link href="/PAGES/Contact" className='text-semibold text-[16px] text-white hover:underline'>Nous contacter</Link >
         <p className='text-semibold text-[16px] text-white'>Politique de confidentialité</p>
         <p className='text-semibold text-[16px] text-white'>Conditions générales</p>
     </div>

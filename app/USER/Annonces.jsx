@@ -47,9 +47,9 @@ const Annonces = () => {
   }
 
   return (
-    <div className='py-5'>
+    <div className='py-9'>
       <h1 className='text-[#263056] text-[30px] font-bold'>Liste des annonces</h1>
-      <div className='flex justify-between pt-2 space-x-96'>
+      <div className='flex justify-between pt-5 space-x-96'>
         <div className="relative w-full">
           <RiSearchLine className="absolute left-3 top-1/2 size-[24px] transform -translate-y-1/2 text-gray-400" />
           <input 
