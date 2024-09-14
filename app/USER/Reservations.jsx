@@ -1,43 +1,48 @@
 
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+// Reservations.jsx
 import React from 'react';
 import { RiSearchLine } from 'react-icons/ri';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Button } from "@/components/ui/button";
+import TableClient from './TableClient'; // Import the new TableClient component
 
 const Reservations = () => {
   return (
     <div className='py-9'>
-      {/* Utilisation de flex ici pour aligner le h1 et le Select */}
       <div className="flex justify-between items-center">
         <h1 className='text-[#263056] text-[30px] font-bold'>Liste des réservations</h1>
-        
-        <Select>
-          <SelectTrigger className="w-fit px-4">
-            <SelectValue placeholder="Sélectionner la catégorie" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="proprietaire">En tant que propriétaire</SelectItem>
-              <SelectItem value="client">En tant que client</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
-
-      
-      <div className='flex justify-between pt-5 space-x-10'>
-        <div className="relative w-[500px]">
-          <RiSearchLine className="absolute left-3 top-1/2 size-[24px] transform -translate-y-1/2 text-gray-400" />
-          <input 
-            type="text" 
-            placeholder="Rechercher ici..." 
-            className="border border-gray-300 py-2 px-10 w-full rounded-lg" 
-          />
+        <div className="flex gap-x-5 items-center">
+          <Select>
+            <SelectTrigger className="w-fit">
+              <SelectValue placeholder="Sélectionner la catégorie" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="proprietaire">En tant que propriétaire</SelectItem>
+                <SelectItem value="client">En tant que client</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
         </div>
       </div>
 
-
+      <div className='pt-8'>
+        <div className="flex justify-between items-center gap-x-3">
+          <div className='flex w-[40%] relative'>
+            <input
+              placeholder='Rechercher...'
+              className='text-[#9D9D9D] text-sm w-full bg-[#F9F9F9] rounded-[12px] py-2 px-4 outline-none border-none'
+            />
+            <RiSearchLine className='absolute right-4 top-[50%] translate-y-[-50%] text-xl text-[#9D9D9D]' />
+          </div>
+          <Button variant="outline" size="sm">Exporter</Button>
+        </div>
+        <div className='pt-5'>
+          <TableClient /> {/* Use the TableClient component */}
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 export default Reservations;
